@@ -13,7 +13,7 @@
 
       context.save();
 
-      context.clearRect(0, 0, 200, 200);
+      context.clearRect(0, 0, mainDrawing.width, mainDrawing.height);
       context.translate(100, 100);
       context.rotate(((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds());
 
@@ -27,7 +27,6 @@
 
       context.restore();
       window.requestAnimationFrame(draw);
-
     }
   }
 
